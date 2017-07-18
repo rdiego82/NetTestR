@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Historial de consumo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Historial de consumo</h2>
+<br />
+
+<div id="Consumo"></div>
+
+@section Scripts {
+    <link type="text/css" href="~/Content/Recharges.css" rel="stylesheet" />
+    @Scripts.Render("~/bundles/ConHistory")
+    @Scripts.Render("~/bundles/jquery")
+}

@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Consumo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Crear consumo</h2>
+<br />
+
+<form class="contact_form" action="#" id="contact_form">
+    <div>
+        <ul>
+            <li>
+                <label for="number">Número de Celular:</label>
+                <input type="text" id="celNumber" required  />
+            </li>
+            <li>
+                <label for="email">Valor:</label>
+                <input type="text" id="cost" required />
+            </li>
+
+            <li>
+                <button class="submit" type="button" onclick="Process.CreateProcess('C')">Crear</button>
+            </li>
+        </ul>
+    </div>
+</form>
+
+@section Scripts {
+    <link type="text/css" href="~/Content/Recharges.css" rel="stylesheet" />
+    @Scripts.Render("~/bundles/Process")
+    @Scripts.Render("~/bundles/jquery")
+}

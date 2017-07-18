@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Nuevo Costo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Crear Nuevo costo</h2>
+
+<br />
+
+<form class="contact_form" action="#" id="contact_form">
+    <div>
+        <ul>
+           
+            <li>
+                <label for="email">Valor costo por segundo:</label>
+                <input type="text" id="cost" required />
+            </li>
+
+            <li>
+                <button class="submit" type="button" onclick="CostPerSecond.Create()">Crear</button>
+            </li>
+        </ul>
+    </div>
+</form>
+
+@section Scripts {
+    <link type="text/css" href="~/Content/Recharges.css" rel="stylesheet" />
+    @Scripts.Render("~/bundles/CostPerSecond")
+    @Scripts.Render("~/bundles/jquery")
+}

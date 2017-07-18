@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Historial de Recargas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Historial de Recargas</h2>
+<br />
+
+<div id="Recargas"></div>
+
+@section Scripts {
+    <link type="text/css" href="~/Content/Recharges.css" rel="stylesheet" />
+    @Scripts.Render("~/bundles/RechHistory")
+    @Scripts.Render("~/bundles/jquery")
+}
